@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Redeclaring a Variable Using let</h2>
+
+<p id="demo"></p>
+
+<script>
+let  m = 20;
+// Here m is 20
+
+{  
+  let m = 12;
+  // Here m is 12
+}
+
+// Here m is 20
+document.getElementById("demo").innerHTML = m;
+</script>
+
+</body>
+</html>
+
+
