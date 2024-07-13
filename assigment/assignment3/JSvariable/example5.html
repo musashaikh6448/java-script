@@ -1,18 +1,25 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 <body>
-    <script>
 
+<h1>JavaScript Variables</h1>
 
+<p>In this example, fname, lname, and full name are variables.</p>
+<p id="fname"></p>
+<p id="lname"></p>
+<p id="demo"></p>
 
+<script>
+const fname = "shaikh";
+const lname = "musa";
+let fullname = fname + lname;
 
+document.getElementById("fname").innerHTML ="The  fname    is: " + fname;
+document.getElementById("lname").innerHTML ="The  lname    is: " + lname;
+document.getElementById("demo").innerHTML ="The fullname is " + fullname;
+</script>
 
-    </script>
 </body>
 </html>
+
+
