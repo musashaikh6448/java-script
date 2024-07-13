@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScropt const variables has block scope</h2>
+
+<p id="demo"></p>
+
+<script>
+const  a = 15;
+// Here a is 15
+
+{  
+const a = 2;
+// Here a is 2
+}
+
+// Here a is 15
+document.getElementById("demo").innerHTML = "a is " + a;
+</script>
+
+</body>
+</html>
+
+
