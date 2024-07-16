@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <title>example 9</title>
+  </head>
+  <body>
+    <h2>JavaScript Numbers</h2>
 
-<h2>JavaScript Numbers</h2>
+    <p>
+      Extra large or extra small numbers can be written with scientific
+      (exponential) notation:
+    </p>
 
-<p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+    <p id="demo"></p>
 
-<p id="demo"></p>
+    <script>
+      let num1 = 123e5;
+      let num2 = 123e-5;
 
-<script>
-let y = 123e5;
-let z = 123e-5;
-
-document.getElementById("demo").innerHTML =
-y + "<br>" + z;
-</script>
-
-</body>
+      document.getElementById("demo").innerHTML = num1 + "<br>" + num2;
+    </script>
+  </body>
 </html>
-
-
