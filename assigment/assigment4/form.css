@@ -1,0 +1,23 @@
+body{
+    background-color: #d3d3a4;
+    
+
+}
+.maibody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.cont{
+    background-color:#95ab68bc ;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+span{
+    color: red;
+}
+
