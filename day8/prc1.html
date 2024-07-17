@@ -7,10 +7,58 @@
   </head>
   <body>
     <script>
+        // ******************** logical **********
       let num1 = 40;
       let num2 = 20;
-      console.log(--num1);
-      console.log(num1--);
+      num1++    //41
+      num1++       //42
+      num2++
+      ++num1     //43
+      ++num1            //44
+      --num1          //43
+      console.log(++num1);  //44
+      console.log(num1)     //44
+
+
+
+    //   ***************** relational **********
+    let a=30
+    let b=30
+    console.log(a>b)
+    console.log(a==b) //it checks only value
+    console.log(a>=b)
+    console.log(a<b)
+    console.log(a<=b)
+    console.log(a!=b)
+
+
+
+    // *********** strict *************//
+
+    let x=30
+    let y="30"
+    console.log(x==y) //it checks only value
+    console.log(x===y)  //strict equal to 
+
+//***************//
+
+let m=10
+let n="shaikh"
+let o=30
+console.log(m+n+o)    //10shaikh30
+console.log(n+o+m)    //shaikh3010
+console.log(o+m+n)    //40shaikh
+
+
+    //+ if numbers then it will perform adittion
+   // + if string then it will perform concatination
+   // + if string and number then concatination
+
+   //********************* type of *************//
+   let t=10
+   let s="shaikh"
+   console.log(typeof(t))
+   console.log(typeof(s))
     </script>
   </body>
 </html>
