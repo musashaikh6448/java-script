@@ -1,74 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-// let name= "musa"
-// let id= 1503
+      // let name= "musa"
+      // let id= 1503
 
-// if(name=="musa" && id >= 1503)
-// {
-// alert(`you are musa`)
+      // if(name=="musa" && id >= 1503)
+      // {
+      // alert(`you are musa`)
 
-// }
-// else if (name=="musa" && id != 1503 ) {
-//     alert(`you are not  musa !` )
-// }
-// else{
-//     alert('enter your correct name and employe id')
-// }
+      // }
+      // else if (name=="musa" && id != 1503 ) {
+      //     alert(`you are not  musa !` )
+      // }
+      // else{
+      //     alert('enter your correct name and employe id')
+      // }
 
+      let age = prompt("enter your age");
 
+      // if(age>=18 ){
+      //     let hasvoterid = prompt(`do you have a voter id ? (yes or no )`)
+      //     if(hasvoterid== "yes"){
+      //     alert("your are eligible for vote")
+      // }else{
+      //     alert('you need a voter id to vote')
+      // }
 
+      // }
+      // else if (age>=18 ){
+      //     alert("your age is not valid for voting")
+      // }
 
+      // else{
+      //     alert("something is wrong")
+      // }
 
-
-
-
-
-
-
-
-
-
-
-
-let age= prompt("enter your age")
-
-
-if(age>=18 ){
-    let hasvoterid = prompt(`do you have a voter id ? (yes or no )`)
-    if(hasvoterid== "yes"){
-    alert("your are eligible for vote")
-}else{
-    alert('you need a voter id to vote')
-}
-
-}
-else if (age>=18 ){
-    alert("your age is not valid for voting")
-}
-
-else{
-    alert("something is wrong")
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+      if (age >= 18) {
+        let hasVoterId = prompt("Do you  Have Voter ID ?");
+        if (hasVoterId == "yes") {
+          alert("You Are Eligible For Vote");
+        } else {
+          alert("Create Your Voter ID ");
+        }
+      } else {
+        alert("You Are Not Eligible For Vote");
+      }
     </script>
-</body>
+  </body>
 </html>
