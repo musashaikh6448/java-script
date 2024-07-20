@@ -7,28 +7,57 @@
 </head>
 <body>
     <script>
-     let a = +prompt( ` Enter a number between 0 to 1  and i will give you spelling` );
+     let day = prompt( ` Enter a day name i will show number of day ` );
      let spell= "";
 
-  switch(a){
- case 0:
-    spell="zero"
+  switch(day){
+ case "monday": 
+ case "MONDAY": 
+    case"Monday":
+    spell="the first day of week"
     break;
-    case 1:
-    spell="one"
+
+    case "tuesday": 
+    case "Tuesday": 
+    case"TUESDAY": 
+    spell="the second day of week"
     break;
-    case 2:
-    spell="two"
+    
+    case "wednesday":
+     case"Wednesday":
+      case"WEDNESDAY":
+    spell="the third day of week"
     break;
-    case 3:
-    spell="three"
+
+    case "thursday":
+     case"Thursday" :
+     case"THURSDAY": 
+    spell="the fourth day of week"
     break;
-    case 4:
-    spell="four"
+
+    case "friday":
+     case "Friday": 
+     case "FRIDAY": 
+    spell="the fifth day of week"
     break;
-    default:
+
+    case "saturday": 
+    case "Saturday" :
+     case"SATURDAY": 
+    spell="the sixth day of week"
+    break;
+
+    case "sunday":
+     case "Sunday" :
+      case "SUNDAY": 
+    spell="the seven day of week"
+    break;
+ 
+    default: 
         spell='wrong input'
   }
+   
+  document.write(`the day of ${day}  is ${spell}`)
         
     </script>
 </body>

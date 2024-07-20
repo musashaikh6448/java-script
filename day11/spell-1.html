@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spell 1</title>
+</head>
+<body>
+    <script>
+        let day= prompt("enter week day i will show their no")
+        let spell=""
+        if(day== "sunday" || "Sunday" || "SUNDAY"){
+          spell=`first `
+        }
+        else if(day=="monday" || "Monday" || "MONDAY"){
+          spell=`second `
+        }
+        else if(day=="tuesday"||"Tuesday"||"TUESDAY"){
+          spell=`third `
+        }
+        else if(day=="wednesday"||"Wednesday"||"WEDNESDAY"){
+          spell=`fourth `
+        }
+        else if(day=="thursday"||"Thursday" ||"THURSDAY"){
+          spell=`fifth `
+        }
+        else if(day=="friday"|| "Friday"|| "FRIDAY"){
+          spell=`sixth `
+        }
+        else if(day=="saturday"|| "Saturday" ||"SATURDAY"){
+          spell=`seventh `
+        }
+        else{
+          spell=(`wrong input`)
+        }
+        document.write(`the  number of ${day} in week is ${spell} `)
+    </script>
+</body>
+
+</html>
