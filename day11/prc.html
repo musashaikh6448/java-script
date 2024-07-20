@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>condition statement</title>
+  </head>
+  <body>
     <script>
+      //******************  if condition **********//
 
+      //   let a = +prompt(`enter the number`);
 
+      //  if (a % 2 == 0)      (for even)
+      //   if (a % 2 != 0) {                           (for odd)
+      //      console.log(`the given number is ${a} is even`);
+      //      console.log("hello");
+      //     document.write(`the given number is ${a} is odd`)
+      //   }
 
+      //************************   if-else condition    *******************//
 
+      //   let a = +prompt(`enter the number`);
+
+      //   if (a % 2 == 0) {
+      //     document.write(`<mark> the given number is ${a} is even </mark> <br>`);
+      //     documnet.write(`in if block`);
+      //   } else {
+      //     document.write(`<sup> the given number is ${a} is odd </sup> <br>`);
+      //     document.write(`in else block`);
+      //   }
+
+      //***************** else if ************//
+
+      let a = +prompt(`enter  the first number `);
+      let b = +prompt(`enter the second number`);
+      let c = +prompt(`enter the third number`);
+
+      if (a > b && a > c) {
+        document.write(` the first number ${a} is greater`);
+      } else if (b > a && b > c) {
+        document.write(` the second number ${b} is greater`);
+      } else if (c > a && c > b) {
+        document.write(` the third number ${c} is greater`);
+      }
+      //********************   ********************//
     </script>
-</body>
+  </body>
 </html>
