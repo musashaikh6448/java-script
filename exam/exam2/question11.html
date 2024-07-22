@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question 11</title>
+  </head>
+  <body>
+    <h2>
+      Q11)Write a program that categorizes a person's BMI. Use the following
+      categories: BMI < 18.5: "Underweight" 18.5 <= BMI < 24.9: "Normal weight"
+      25 <= BMI < 29.9: "Overweight" BMI >= 30: "Obese" note take BMI from user
+    </h2>
+
+
+    <script>
+        let BMI = +prompt("enter your BMI");
+  
+        if (BMI <= 18.5) {
+          document.write("Underweight");
+        } else if (BMI >= 18.5 && BMI <= 24.9) {
+          document.write("Normal weight");
+        } else if (BMI >= 25 && BMI <= 29.9) {
+          document.write("Overweight");
+        } else if (BMI >= 30) {
+          document.write("Obese");
+        } else {
+          document.write("wrong input");
+        }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="`en`">
+  <head>
+    <meta charset="`UTF-8`" />
+    <meta
+      name="`viewport`"
+      content="`width"
+      ="device-width,"
+      initial-scale="1.0`"
+    />
+    <title>question 12</title>
+  </head>
+  <body>
+    <h2>
+      Q12)Write a program that prints the day of the week based on a number (1
+      for Monday, 2 for Tuesday, etc.). If the number is not between 1 and 7,
+      print `Invalid day
+    </h2>
+
+    <script>
+      let day = +prompt(` Enter a number 1 to 7 i will show you theri day `);
+      let spell = ``;
+
+      switch (day) {
+        case 1:
+          spell = `the ${day} day of week is sunday`;
+          break;
+        case 2:
+          spell = `the ${day} day of week  is monday`;
+          break;
+
+        case 3:
+          spell = `the ${day}  day of week is tuesday`;
+          break;
+
+        case 4:
+          spell = `the ${day}  day of week is wednesday`;
+          break;
+
+        case 5:
+          spell = `the ${day} day of week is thursday`;
+          break;
+
+        case 6:
+          spell = `the ${day} day of week is  friday`;
+          break;
+
+        case 7:
+          spell = `the ${day} day of week  is saturday`;
+          break;
+
+        default:
+          spell = `invalid day `;
+      }
+
+      document.write(`the day of ${day}  is ${spell}`);
+    </script>
+  </body>
+</html>

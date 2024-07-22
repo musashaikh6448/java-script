@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question 4</title>
+  </head>
+  <body>
+    <h2>Q4 Write a program to find out of 3 number which is greatest</h2>
+    <script>
+      let a = +prompt(`enter  the first number `);
+      let b = +prompt(`enter the second number`);
+      let c = +prompt(`enter the third number`);
+
+      if (a > b && a > c) {
+        document.write(` the first number ${a} is greater`);
+      } else if (b > a && b > c) {
+        document.write(` the second number ${b} is greater`);
+      } else if (c > a && c > b) {
+        document.write(` the third number ${c} is greater`);
+      }
+    </script>
+  </body>
+</html>
