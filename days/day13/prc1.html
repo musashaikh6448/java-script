@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>function</h1>
+    <p>multi return</p>
+    <script>
+      //conditional statement me hum multiple return value de sakte hai //
+      function isEven(num) {
+        if (num % 2 == 0) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      let flag = isEven(21);
+      console.log(flag);
+    </script>
+    <!-- //*******************************************// -->
+
+    <p>function -- function</p>
+    <!-- //isme hum function ke andar function bana sakte hai aise// -->
+    <script>
+      let add = (x, y) => {
+        let result = x + y;
+        display(result);
+      };
+      let display = (msg) => {
+        console.log(msg);
+      };
+      add(10, 20);
+    </script>
+    <!-- *************************************************** -->
+    <p>call back</p>
+    <script>
+      let add = (x, y, cb) => {
+        let result = x + y;
+        cb(result);
+      };
+      let display = (msg) => {
+        console.log(msg);
+      };
+      //call back// async programming//
+      // add(10,20,display)
+      add(10, 20, (msg) => {
+        console.log(msg);
+      });
+    </script>
+  </body>
+</html>
