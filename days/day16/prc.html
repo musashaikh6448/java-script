@@ -6,6 +6,47 @@
     <title> objects </title>
 </head>
 <body>
-    
+    <h1>objects</h1>
+    <script>
+        // let fan= {
+        //     color: "black",
+        //     price: 1500,
+        //     company:"orient",
+        //     wings:3,
+        //     givesAir:function(){
+        //         console.log("gives air")
+        //     }
+        // }
+        // console.log(fan);
+        // console.log(fan.color);
+        // console.log(fan.price);
+        // console.log(fan.company);
+        // console.log(fan.wings);
+        // fan.givesAir();
+let car1={}        //empty obj
+
+        let car= {
+            color: "black",
+            price: "28.40 CR",
+            company:"bugati",
+            model:"chiron",
+            door:2,
+            speed:"310km/h",
+            drive:function(){
+                console.log("racing ")
+            }
+        }
+        console.log(car);
+        console.log(car.color);
+        console.log(car.price);
+        console.log(car.company);
+        console.log(car.model)
+        console.log(car.door);
+        car.drive();
+
+        let {color:clr,price:pr}=car
+        console.log(clr)
+        console.log(pr)
+    </script>
 </body>
 </html>
