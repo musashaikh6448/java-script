@@ -7,7 +7,144 @@
   </head>
   <body>
     <script>
-        
+      //constructor//
+      function Employee(id, name, age, salary) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+      }
+      let emp1 = new Employee(1, "musa", 21, 40000);
+      let emp2 = new Employee(2, "azhar", 24, 40000);
+      let emp3 = new Employee(3, "noman", 19, 40000);
+      let emp4 = new Employee(4, "azim", 21, 40000);
+
+      console.log(emp1);
+      console.log(emp2);
+      console.log(emp3);
+      console.log(emp4);
+    </script>
+    <!-- ****************************************************** -->
+    <script>
+      function Employee(id, name, age, salary) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+        this.dispaly = function () {
+          console.log(`the id is ${this.id} and name ${this.name}`);
+        };
+      }
+      let user1 = new Employee(1, "sam", 23, 40000);
+      console.log(user1);
+      let user2 = new Employee(2, "sonu", 24, 50000);
+      console.log(user2);
+      emp1.dispaly();
+      emp2.dispaly();
+    </script>
+    <!-- **************************************************************** -->
+    <script>
+      let user3 = {
+        name: "musa",
+        age: 21,
+        "like birds ": true,
+      };
+      console.log(user3["name"]);
+      console.log(user3["age "]);
+
+      console.log(user3["like birds"]);
+    </script>
+    <!-- ***************************************************** -->
+    <script>
+      //boolean//
+      let user4 = {
+        name: "john",
+        age: 40,
+        "like birds": true,
+      };
+
+      console.log("name" in user4);
+      console.log("ddddd" in user4);
+      let flag = "age" in user4;
+      console.log(flag);
+    </script>
+    <!-- ******************************************** -->
+    <script>
+      // for in
+
+      let user = {
+        name: "shaikh",
+        age: 21,
+        salary: 400000,
+      };
+      for (key in user) {
+        {
+          console.log(user[key]);
+        }
+      }
+    </script>
+    <!-- ************************************************* -->
+    <script>
+      // nested object//
+      let person = {
+        name: "sam",
+        age: 40,
+        vehicle: {
+          bike: "luna",
+          cycle: "hero",
+          car: "audi",
+        },
+        hobbies: ["reading", "playing", "helping"],
+      };
+      console.log(person.name);
+      console.log(person.age);
+      console.log(person.vehicle);
+      console.log(person.vehicle.bike);
+      console.log(person.hobbies);
+      console.log(person.hobbies[0]);
+    </script>
+    <!-- ************************************************* -->
+    <script>
+      //array of object//
+      let cars = [
+        {
+          color: "red",
+          capacity: 4,
+        },
+        {
+          color: "white",
+          capacity: 7,
+        },
+      ];
+      console.log(cars[0].capacity);
+      console.log(cars[1].capacity);
+    </script>
+
+    <!-- **************************************************** -->
+    <script>
+      //math function//
+      let x = 10.5;
+      console.log(Math.round(x));
+      console.log(Math.ceil(10.3));
+      console.log(Math.ceil(10.6));
+      console.log(Math.floor(10.4));
+      console.log(Math.floor(10.8));
+      console.log(Math.PI);
+    </script>
+    <!-- ******************************************** -->
+    <script>
+      // random function
+      let z = Math.floor(Math.random() * 10);
+      console.log(z);
+    </script>
+    <!-- **************************************************** -->
+    <script>
+      // date function
+      console.log(Math.random());
+      let d = new Date();
+      console.log(d);
+      console.log(d.getMonth());
+      console.log(d.getDate());
     </script>
   </body>
 </html>
