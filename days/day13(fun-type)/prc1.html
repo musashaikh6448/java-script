@@ -37,16 +37,16 @@
     <!-- *************************************************** -->
     <p>call back</p>
     <script>
-      let add = (x, y, cb) => {
+      let add1 = (x, y, cb) => {
         let result = x + y;
         cb(result);
       };
-      let display = (msg) => {
+      let display1 = (msg) => {
         console.log(msg);
       };
       //call back// async programming//
       // add(10,20,display)
-      add(10, 20, (msg) => {
+      add1(10, 20, (msg) => {
         console.log(msg);
       });
     </script>
