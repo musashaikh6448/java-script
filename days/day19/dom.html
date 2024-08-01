@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,5 +20,26 @@
 
 
      </script>
+</body>
+</html>          -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+    <h1 class="hlo">hey</h1>
+    <p class="hlo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = 'hii';
+
+        let text = document.getElementsByClassName('hlo');
+        for (let i = 0; i < text.length; i++) {
+            text[i].innerHTML = 'hello world1';
+        }
+    </script>
 </body>
 </html>
