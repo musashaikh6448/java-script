@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">hi</p>
+    <h1 class="h">hlo</h1>
+    <h2 class="h"></h2>
+    <script>
+      document.getElementById("demo").innerHTML = "good morning";
+      let p = document.getElementById("demo");
+      p.innerHTML = "have a nice day";
+      console.log(p);
+
+      let c = document.getElementsByClassName("h");
+      c[0].innerHTML = "in class";
+      console.log(c);
+    </script>
+</body>
+</html>
