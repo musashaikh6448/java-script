@@ -1,27 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>form validation</title>
-    <link rel="stylesheet" href="./prj5.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body{
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #form-container{
+            background-color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        h2{
+            margin: 0 0 10px 0;
+
+        }
+        input{
+            width: 250px;
+            margin: 10px 0px;
+            padding: 10px;
+        }
+        input[type = "submit"]{
+            width: 275px;
+            background-color: #3498db;
+            border:0px;
+            color: white ;
+        }
+        .error{
+            color: red;
+            margin: 0px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
     <div id="form-container">
-      <h2>login</h2>
-      <form action="" onsubmit="return validateForm()">
-        <input type="text" placeholder="Enter your name" id="username" /><br />
-        <p id="userError" class="error"></p>
-        <input
-          type="password"
-          placeholder="Enter your Pasword"
-          id="Password"
-        /><br />
-        <p id="passError" class="error"></p>
-        <input type="submit" />
-      </form>
+        <h2>Login</h2>
+        <form action="" onsubmit="return validationFrom()">
+            <input type="text" placeholder="User Name"  id="username"><br>
+        <p id="ptag" class="error"></p>
+
+            <input id="password" type="password" placeholder="Password"><br>
+            <p id="pass" class="error"></p>
+
+            <input id="submit" type="submit" name="" id="">
+        </form>
     </div>
 
-    <script src="./prj5.js"></script>
-  </body>
+    <script>
+        let username = document.getElementById("username")
+        let password = document.getElementById("password")
+        let form = document.getElementById("form")
+        let submit = document.getElementById("submit")
+        let ptag = document.getElementById("ptag")
+        let pass = document.getElementById("pass")
+        let flag = 1
+
+
+   
+        
+    function validationFrom(){
+        if (username.value == "") {
+            ptag.innerHTML = "User Name Is Empty"
+            flag=0
+       }else if(username.value.length < 4){
+        ptag.innerHTML = "User Name Required Min 4 Char"
+        flag=0
+
+       }else{
+        ptag.innerHTML = ""
+        flag=1
+        
+       }
+       if (password.value == "") {
+            pass.innerHTML = "Password Is Empty"
+            flag=0
+
+       }else{
+        pass.innerHTML = ""
+        flag=1
+       }
+          if(flag){
+            return true
+          }else{
+            return false
+          }
+    }
+
+    </script>
+</body>
 </html>
