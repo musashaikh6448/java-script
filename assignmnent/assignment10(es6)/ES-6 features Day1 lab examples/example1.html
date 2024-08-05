@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>let example</title>
+</head>
+<body>
+  <h2>Redeclaring a Variable Using let</h2>
+
+  <p id="demo"></p>
+
+  <script>
+    let x = 10;
+    var y = 20;
+    console.log(window.x); //let does not attached
+    console.log(window.y); // get attached to windows object
+    // Here x is 10
+    //we cannot redeclare it let
+    //var can be re declare no error
+    {
+      let x = 2; // Here x is 2
+    }
+
+    // Here x is 10
+    document.getElementById("demo").innerHTML = x;
+  </script>
+</body>
+</html>
