@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const numbersOne = [1, 2, 3];
+      const numbersTwo = [4, 5, 6];
+      const numbersCombined = [...numbersOne, ...numbersTwo];
+
+      document.write(numbersCombined);
+    </script>
+
+    using with destructuring
+
+    <script>
+      const numbers = [1, 2, 3, 4, 5, 6];
+
+      const [one, two, ...rest] = numbers;
+
+      document.write("<p>" + one + "</p>");
+      document.write("<p>" + two + "</p>");
+      document.write("<p>" + rest + "</p>");
+    </script>
+
+    spread in object
+    <script>
+      const myVehicle = {
+        brand: "Ford",
+        model: "Mustang",
+        color: "red",
+      };
+
+      const updateMyVehicle = {
+        type: "car",
+        year: 2021,
+        color: "yellow",
+      };
+
+      const myUpdatedVehicle = { ...myVehicle, ...updateMyVehicle };
+
+      //Check the result object in the console:
+      console.log(myUpdatedVehicle);
+    </script>
+
+    Notice the properties that did not match were combined, but the property
+    that did match, color, was overwritten by the last object that was passed,
+    updateMyVehicle. The resulting color is now yellow. Q)Use the spread
+    operator to combine the following arrays. const arrayOne = ['a', 'b', 'c'];
+    const arrayTwo = [1, 2, 3];
+  </body>
+</html>
