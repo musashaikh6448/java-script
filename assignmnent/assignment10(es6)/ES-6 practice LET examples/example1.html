@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    1)let x = "John Doe"; let x = 0; // SyntaxError: 'x' has already been
+    declared 2)var x = "John Doe"; var x = 0; 3){   var x = 2; } // x CAN be
+    used here console.log(x); 4) Global Scope example
+    <script>
+      let x = 20;
+      document.write("Outside the function x = " + x);
+
+      function show() {
+        document.write("<br> Inside the function x = " + x);
+      }
+      show();
+    </script>
+    5) Function Scope example
+    <script>
+      function show() {
+        let num = 15;
+        document.write("Inside the function num = " + num);
+      }
+      show();
+      document.write("<br> Outside the function num = " + num);
+    </script>
+
+    6)Block Scope example
+    <script>
+      {
+        let num = 30;
+        document.write("Inside the function num = " + num);
+      }
+      document.write("<br> Outside the function num = " + num);
+    </script>
+
+    7)Redeclaring variable in different blocks  
+    <script>
+      let num = 23;
+      {
+        let num = 15;
+        document.write("num inside the function = " + num);
+      } //let num = 89; //uncoment this to check error
+      document.write("<br> num outside the function = " + num);
+    </script>
+
+    
+    8)How let is different from the var keyword?
+    <script>
+      function checkGlobalScope() {
+        // x is declared yet so not available here
+        document.write("Value of x before the block: " + x);
+        {
+          var x = 20;
+          xx = x + 8;
+        } // x is still known here and has a value.
+        document.write("<br> Value of x after the block: " + x);
+      } //x is declared inside the function, so not available here
+      checkGlobalScope();
+    </script>
+
+    9)Ref below link for more examples
+    https://www.javatpoint.com/javascript-let-keyword
+  </body>
+</html>
