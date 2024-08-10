@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Q17 explain call back hell with example</h1>
+    <script>
+    asyncFunction1((result1) => {
+        asyncFunction2(result1, (result2) => {
+          asyncFunction3(result2, (result3) => {
+            asyncFunction4(result3, (result4) => {
+              // More nested callbacks can continue
+            });
+          });
+        });
+      });
+      </script>
+</body>
+</html>

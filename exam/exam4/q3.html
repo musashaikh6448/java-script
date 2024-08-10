@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question 3</title>
+  </head>
+  <body>
+    <h1>
+      Q3 What are the differences between ES6 class and ES5 function
+      constructors explain with example?
+    </h1>
+
+    <script>
+      function Person(name) {
+        this.name = name;
+      }
+
+      Person.prototype.greet = function () {
+        console.log("Hello, " + this.name);
+      };
+
+      let person = new Person("musa");
+      person.greet(); // Output: Hello, John
+
+
+      //classes
+class Emp{
+    constructor(name, id){
+        this.name= name
+        this.id=id
+}}
+let e1= new Emp('musa',1503)
+let e2= new Emp('azhar',1504)
+let e3= new Emp('noman',1517)
+console.log(e1)
+console.log(e2)
+console.log(e3)
+
+
+    </script>
+  </body>
+</html>
