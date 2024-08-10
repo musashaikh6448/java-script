@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Q17 explain call back hell with example</h1>
     <script>
-    asyncFunction1((result1) => {
-        asyncFunction2(result1, (result2) => {
-          asyncFunction3(result2, (result3) => {
-            asyncFunction4(result3, (result4) => {
-              // More nested callbacks can continue
-            });
+      // Simulate asynchronous operations with callbacks
+      function firstTask(callback) {
+        setTimeout(() => {
+          console.log("First task done");
+          callback();
+        }, 1000);
+      }
+
+      function secondTask(callback) {
+        setTimeout(() => {
+          console.log("Second task done");
+          callback();
+        }, 1000);
+      }
+
+      function thirdTask(callback) {
+        setTimeout(() => {
+          console.log("Third task done");
+          callback();
+        }, 1000);
+      }
+
+      // Callback hell
+      firstTask(() => {
+        secondTask(() => {
+          thirdTask(() => {
+            console.log("All tasks completed");
           });
         });
       });
-      </script>
-</body>
+    </script>
+  </body>
 </html>
