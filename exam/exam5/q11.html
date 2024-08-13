@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>question 11</title>
+    <title>Document</title>
 </head>
 <body>
-    
+    <h1>
+        Destructure the following array of object
+let cars = [
+  {
+    "color": "purple
+    "type": "minivan",
+    "registration": new Date('2017-01-03'),
+    "capacity": 7
+  },
+  {
+    "color": "red",
+    "type": "station wagon",
+    "registration": new Date('2018-03-03'),
+    "capacity": 5
+  }]
+
+
+  <script>
+    let cars = [
+  {
+    "color": "purple",
+    "type": "minivan",
+    "registration": new Date('2017-01-03'),
+    "capacity": 7
+  },
+  {
+    "color": "red",
+    "type": "station wagon",
+    "registration": new Date('2018-03-03'),
+    "capacity": 5
+  }]
+  let [firstcar,seccar] = cars 
+
+  console.log(firstcar);
+  console.log(seccar);
+  
+//   let [  color, type, registration, capacity     ] = firstcar;
+//   let [ { color2, type2, registration2, capacity2 } ] = seccar;
+  let { color: firstCarColor, type: firstCarType, registration: firstCarRegistration, capacity: firstCarCapacity } = firstcar;
+let { color: secondCarColor, type: secondCarType, registration: secondCarRegistration, capacity: secondCarCapacity } = seccar;
+
+  console.log(firstCarColor);
+  console.log(secondCarColor);
+  console.log(secondCarType);
+
+  console.log(secondCarRegistration);
+  
+
+  
+  </script>
+    </h1>
 </body>
 </html>

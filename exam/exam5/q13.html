@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>question 13</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>destructure the given array of object</h1>
+
+    <script>
+      var events = [
+        {
+          userId: 1,
+          place: "Wormholes Allow Information to Escape Black Holes",
+          name: "Check out this recent discovery about workholes",
+          date: "2020-06-26T17:58:57.776Z",
+          id: 1,
+        },
+        {
+          userId: 1,
+          place: "Wormholes Allow Information to Escape Black Holes",
+          name: "Check out this recent discovery about workholes",
+          date: "2020-06-26T17:58:57.776Z",
+          id: 2,
+        },
+        {
+          userId: 1,
+          place: "Wormholes Allow Information to Escape Black Holes",
+          name: "Check out this recent discovery about workholes",
+          date: "2020-06-26T17:58:57.776Z",
+          id: 3,
+        },
+      ];
+
+      let [fobj,sobj,tobj] = events
+
+      let {userId:userId1,place:place1,name:name1,date:date1,id:id1}= fobj
+      let {userId:userId2,place:place2,name:name2,date:date2,id:id2} =sobj
+      let {userId:userId3,place:place3,name:name3,date:date3,id:id3} =tobj
+
+      console.log(userId1);
+      console.log(place2);
+      console.log(id3);
+      
+    </script>
+  </body>
 </html>

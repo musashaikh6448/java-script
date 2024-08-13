@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>question 15</title>
+    <title>Document</title>
 </head>
 <body>
-    
+    <h1>Explain call back with example</h1>
+
+    <script>
+  function greet(name, calllback) {
+    console.log('Hello, ' + name + '!');
+    calllback(); 
+}
+
+function endGreeting() {
+    console.log('Greeting completed.');
+}
+
+greet('Alice', endGreeting);
+
+    </script>
 </body>
 </html>

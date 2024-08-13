@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>queston 12</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Print all the properties of object in console</h1>
+
+    <script>
+      const newspapers = [
+        {
+          name: "thetimes",
+          address: "https://www.thetimes.co.uk/environment/climate-change",
+        },
+        {
+          name: "gaurdian",
+          address: "https://www.theguardian.com/environment/climate-crisis",
+        },
+        {
+          name: "telegraph",
+          address: "https://www.telegraph.co.uk/climate-change",
+        },
+        {
+          name: "telegraph",
+          address: "https://www.telegraph.co.uk/climate-change",
+        },
+      ];
+
+      for(let ele of newspapers){
+        let res = newspapers[ele]
+        console.log(ele);
+      }
+    </script>
+  </body>
 </html>

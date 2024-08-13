@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>question 7</title>
+    <title>Document</title>
 </head>
 <body>
-    
+    <h1>Write a JavaScript function that reverse a number. </h1>
+    <h2>Example x = 32243;
+        Expected Output : 34223
+        </h2>
+        <script>
+           function reverseNumber(num) {
+    // Convert the number to a string
+    let numStr = num.toString();
+
+    // Reverse the string
+    let reversedStr = numStr.split('').reverse().join('');
+
+    // Convert the reversed string back to a number
+    let reversedNum = parseInt(reversedStr, 10);
+
+    return reversedNum;
+}
+
+// Example usage
+let x = 32243;
+let result = reverseNumber(x);
+console.log(result); // Output: 34223
+
+                
+
+             
+
+            
+            // console.log(x.reverce());
+            
+        </script>
 </body>
 </html>
