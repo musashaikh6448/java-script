@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>task</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>task (arrow function )</h1>
 
     <script>
-         let add = (a, b, c) => {
-        let result = a * b * c;
-        console.log(result);
-        return result;
+            //      let add = (a, b, c) => {
+            //     let result = a * b * c;
+            //     console.log(result);
+            //     return result;
+            //   };
+
+            //   let x = +prompt(`enter  the first number `);
+            //   let y = +prompt(`enter the second number`);
+            //   let z = +prompt(`enter the third number`);
+
+            // //   let x = add(20, 30, 50);
+            //   console.log(add(x,y,z));
+////////////////////////////////////////////
+
+            function greet(name, callback) {
+              console.log("Hello, " + name + "!");
+              callback();
+            }
+
+            // Callback function
+            function sayGoodbye() {
+              console.log("Goodbye!");
+            }
+
+           // Calling the greet function and passing sayGoodbye as a callback
+            greet("Alice", sayGoodbye);
+
+////////////////////////////////////////////////////////////////////
+            const greet = (namee, callback) => {
+          console.log(`Hello, ${namee}!`);  // Using template literals for string interpolation
+          callback();
       };
 
+      // ES6 arrow function as a callback
+      const sayGoodbye = () => {
+          console.log("Goodbye!");
+      };
 
-      let x = +prompt(`enter  the first number `);
-      let y = +prompt(`enter the second number`);
-      let z = +prompt(`enter the third number`);
-  
-
-    //   let x = add(20, 30, 50);
-      console.log(add(x,y,z));
+      // Calling the greet function with the callback
+      greet("musa", sayGoodbye);
     </script>
-</body>
+  </body>
 </html>
